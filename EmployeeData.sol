@@ -6,13 +6,13 @@ contract EmployeeData{
     string empAddrs;
     string empSocialId;
     string empId;
-	int empSalary;
+    int empSalary;
     
     function EmployeeData(string newEmpName, string newEmpAddrs, string newEmpSocialId, string newEmpId, int newEmpSalary) public {
         
         empName = newEmpName;
         empAddrs = newEmpAddrs;
-		empSocialId = newEmpSocialId;
+        empSocialId = newEmpSocialId;
         empId = newEmpId;
         empSalary = newEmpSalary;
         

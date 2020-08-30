@@ -5,24 +5,24 @@ contract CarInsurance{
     string custName;
     string custAddress;
     string carModel;
-    string date;
+    string insureDate;
     string insurerName;
     string insuranceID;
-    int insureAmount;
+	int insureAmount;
     
-    function CarInsurance(string newcustName, string newcustAddress, string newCarModel, string newDate, 
+    function CarInsurance(string newcustName, string newcustAddress, string newCarModel, string newInsureDate, 
 	string newInsurerName, string newinsuranceID, int newInsureAmount) public {
         custName = newcustName;
         custAddress = newcustAddress;
         carModel = newCarModel;
-        date = newDate;
+        insureDate = newInsureDate;
         insurerName = newInsurerName;
         insuranceID = newinsuranceID;
         insureAmount = newInsureAmount;
     }
     
     function getCarInsurance() public view returns (string, string, string, string, string, string, int){
-        return(custName, custAddress, carModel, date, insurerName, insuranceID, insureAmount);
+        return(custName, custAddress, carModel, insureDate, insurerName, insuranceID, insureAmount);
     }
     
 }

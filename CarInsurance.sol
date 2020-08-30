@@ -8,7 +8,7 @@ contract CarInsurance{
     string date;
     string insurerName;
     string insuranceID;
-	int insureAmount;
+    int insureAmount;
     
     function CarInsurance(string newcustName, string newcustAddress, string newCarModel, string newDate, 
 	string newInsurerName, string newinsuranceID, int newInsureAmount) public {

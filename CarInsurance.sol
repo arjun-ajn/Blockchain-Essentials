@@ -8,16 +8,16 @@ contract CarInsurance{
     string insureDate;
     string insurerName;
     string insuranceID;
-	int insureAmount;
+    int insureAmount;
     
     function CarInsurance(string newcustName, string newcustAddress, string newCarModel, string newInsureDate, 
-	string newInsurerName, string newinsuranceID, int newInsureAmount) public {
+	string newInsurerName, string newInsuranceID, int newInsureAmount) public {
         custName = newcustName;
         custAddress = newcustAddress;
         carModel = newCarModel;
         insureDate = newInsureDate;
         insurerName = newInsurerName;
-        insuranceID = newinsuranceID;
+        insuranceID = newInsuranceID;
         insureAmount = newInsureAmount;
     }
     
